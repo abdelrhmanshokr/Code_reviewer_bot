@@ -1,0 +1,18 @@
+services:
+  code-reviewer:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app/src
+    volumes:
+      - ./output:/app/output
+      - ./examples:/app/examples:ro
+    env_file:
+      - .env
+
+  # Optional: Add Redis for caching if needed
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"

@@ -1,0 +1,38 @@
+_careem/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files (keep secrets out of repo)
+.env
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+$py.class
+
+# Pytest cache
+.pytest_cache/
+
+# mypy/cache
+.mypy_cache/
+
+# Coverage reports
+htmlcov/
+coverage.xml
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Local output folder (used by docker-compose volumes)
+output/
+
+# OS files
+.DS_Store
+
